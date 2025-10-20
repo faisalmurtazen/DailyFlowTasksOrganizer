@@ -40,10 +40,6 @@ class WebRequestManager: ObservableObject {
             URLQueryItem(name: "country", value: country)
         ]
         
-        if test {
-            queryItems.append(URLQueryItem(name: "test", value: "Y"))
-        }
-        
         components?.queryItems = queryItems
         return components?.url
     }
@@ -132,3 +128,4 @@ class WebRequestManager: ObservableObject {
         shouldShowWeb = false
     }
 }
+
